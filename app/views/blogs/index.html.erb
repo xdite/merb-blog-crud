@@ -1,0 +1,24 @@
+<h1>Blog controller, index action</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+ 
+    <th colspan="3">Actions</th>
+  </tr>
+ 
+<% @posts.each do |post| %>
+  <tr>
+    <td><%=h post.subject %></td>
+    <td><%=h post.content %></td>
+ 
+    <td><%= link_to 'Show', url(:blog, post) %></td>
+    <td><%= link_to 'Edit', url(:edit_blog, post) %></td>
+    <td><%= delete_button(url(:blog,post), "Delete #{post.subject}") %></td>
+  </tr>
+<% end %>
+</table>
+ 
+<%= link_to 'New', resource(:blogs, :new) %>
+

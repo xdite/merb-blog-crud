@@ -1,0 +1,19 @@
+<h1>Blog controller, edit action</h1>
+ 
+ 
+<%= form_for(@post, :action => url(:blog, @post)) do %>
+ 
+  <p>
+    <%= text_field :subject, :label => "Subject"  %>
+  </p>
+ 
+  <p>
+    <%= text_area :content, :label => "Content"  %>
+  </p>
+ 
+  <p>
+    <%= submit "Update" %>
+  </p>
+<% end =%>
+ 
+<%= link_to 'Show', url(:blog,@post) %> | <%= link_to 'Back', resource(:blogs) %>

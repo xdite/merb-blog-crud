@@ -1,0 +1,20 @@
+<h1>Blog controller, new action</h1>
+ 
+
+<%= form_for(@post, :action => resource(:blogs) ) do %>
+ 
+  <p>
+    <%= text_field :subject, :label => "Subject" %>
+  </p>
+ 
+  <p>
+    <%= text_area :content, :label => "Content"  %>
+  </p>
+ 
+  <p>
+    <%= submit "Create" %>
+  </p>
+<% end =%>
+ 
+<%= link_to 'Back', resource(:blogs) %>
+
