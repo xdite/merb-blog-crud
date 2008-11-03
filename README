@@ -1,0 +1,10 @@
+= merb-blog-crud
+
+== Description
+
+This is a CRUD example for merb 0.9.12
+
+== Author & License
+Author: Yi-Ting Cheng (mailto:xdite@handlino.com)
+Copyright (c) 2008 Handlino Inc.
+Licensed under the MIT: http://www.opensource.org/licenses/mit-license.php
